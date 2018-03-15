@@ -1,2 +1,2 @@
-node_modules/
-.idea/
+store/node_modules
+store/.idea
