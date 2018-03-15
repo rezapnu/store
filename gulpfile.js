@@ -16,6 +16,7 @@ gulp.task('two', ['adminlab' , 'one'] , function () {
 gulp.task('concat_js', function () {
     gulp
         .src([
+            './js/jquery-1.8.3.min.js',
             './assets/bootstrap/js/bootstrap.min.js',
             './js/jquery.blockui.js',
             './assets/uniform/jquery.uniform.min.js',
