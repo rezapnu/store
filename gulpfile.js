@@ -1,5 +1,6 @@
 var gulp = require('gulp');
 var concat = require('gulp-concat');
+var uglify = require('gulp-uglify');
 
 gulp.task('adminlab', function () {
     console.log('Hello world');
@@ -25,5 +26,14 @@ gulp.task('concat_js', function () {
             './js/scripts.js'
         ])
         .pipe(concat("app.js"))
+        .pipe(gulp.dest("./dest"));
+});
+
+gulp.task('mix_js', function () {
+    gulp
+        .src([
+            './dest/app.js',
+        ])
+        .pipe(uglify())
         .pipe(gulp.dest("./dest"));
 });
