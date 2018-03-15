@@ -1,2 +1,2 @@
-store/node_modules
-store/.idea
+/node_modules
+/.idea
